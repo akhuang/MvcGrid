@@ -1,9 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcGrid", "MvcGrid\MvcGrid.csproj", "{8C437DFE-0F55-4D75-8DD8-644F04E7360E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcGrid.Tests", "MvcGrid.Tests\MvcGrid.Tests.csproj", "{1988ABFD-F1CB-4A55-9A2B-66AE55979046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zing.Framework", "Zing.Framework\Zing.Framework.csproj", "{82ABEED4-C503-469E-B42C-829F94931CF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,6 +21,10 @@ Global
 		{1988ABFD-F1CB-4A55-9A2B-66AE55979046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1988ABFD-F1CB-4A55-9A2B-66AE55979046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1988ABFD-F1CB-4A55-9A2B-66AE55979046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82ABEED4-C503-469E-B42C-829F94931CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82ABEED4-C503-469E-B42C-829F94931CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82ABEED4-C503-469E-B42C-829F94931CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82ABEED4-C503-469E-B42C-829F94931CF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
