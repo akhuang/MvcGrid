@@ -99,6 +99,7 @@
     <Compile Include="UI\Grid\Fluent\GridBuilder.cs" />
     <Compile Include="UI\HtmlHelperExtension.cs" />
     <Compile Include="UI\ViewComponentFactory.cs" />
+    <Compile Include="Utility\Extensions\TypeExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
