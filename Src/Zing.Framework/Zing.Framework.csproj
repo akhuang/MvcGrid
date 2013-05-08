@@ -96,8 +96,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\ComponentBuilderBase.cs" />
     <Compile Include="UI\DynamicTypeBuilder.cs" />
+    <Compile Include="UI\Grid\Columns\GridBoundColumn.cs" />
+    <Compile Include="UI\Grid\Columns\IGridBoundColumn.cs" />
+    <Compile Include="UI\Grid\Fluent\GridBoundColumnBuilder.cs" />
     <Compile Include="UI\Grid\Fluent\GridBuilder.cs" />
+    <Compile Include="UI\Grid\Fluent\GridColumnFactory.cs" />
+    <Compile Include="UI\Grid\Grid.cs" />
     <Compile Include="UI\HtmlHelperExtension.cs" />
+    <Compile Include="UI\ViewComponentBase.cs" />
+    <Compile Include="UI\ViewComponentBuilderBase.cs" />
     <Compile Include="UI\ViewComponentFactory.cs" />
     <Compile Include="Utility\Extensions\TypeExtensions.cs" />
   </ItemGroup>

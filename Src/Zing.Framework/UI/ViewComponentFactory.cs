@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web.Mvc;
+using Zing.UI.Fluent;
 
 namespace Zing.UI
 {
@@ -19,7 +20,10 @@ namespace Zing.UI
             set;
         }
 
-        public 
+        public virtual GridBuilder<T> Grid<T>() where T : class
+        {
+            return GridBuilder<T>.Create(new Grid<T>());
+        }
     }
 
     public class ViewComponentFactory<TModel> : ViewComponentFactory

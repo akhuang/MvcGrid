@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace Zing.UI
 {
-    public class HtmlHelperExtension
+    public static class HtmlHelperExtension
     {
         public static ViewComponentFactory<TModel> CRM<TModel>(this HtmlHelper<TModel> htmlHelper)
         {
