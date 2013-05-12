@@ -12,5 +12,12 @@ namespace Zing.UI.Fluent
         {
 
         }
+
+        public GridBuilder<T> Columns(Action<GridColumnFactory<T>> configurator)
+        {
+            GridColumnFactory<T> factory = new GridColumnFactory<T>(Component);
+            configurator(factory);
+            return this;
+        }
     }
 }

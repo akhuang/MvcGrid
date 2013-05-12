@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@(Html.CRM().Grid<MvcGrid.Models.Contact>()
+            .Name("Grid")
+            .Columns(columns =>
+            {
+                columns.Bound(o => o.ContactName);
+                columns.Bound(o => o.Email);
+                columns.Bound(o => o.Id);
+            });
+
+)
+
+
+@section sciprts
+{
+
+}

@@ -102,10 +102,19 @@
     <Compile Include="UI\Grid\Fluent\GridBuilder.cs" />
     <Compile Include="UI\Grid\Fluent\GridColumnFactory.cs" />
     <Compile Include="UI\Grid\Grid.cs" />
+    <Compile Include="UI\Grid\GridActionAttribute.cs" />
+    <Compile Include="UI\Grid\GridModel.cs" />
+    <Compile Include="UI\Grid\Html\GridHtmlBuilder.cs" />
+    <Compile Include="UI\Grid\Html\GridRenderingData.cs" />
+    <Compile Include="UI\Grid\Html\IGridHtmlBuilder.cs" />
+    <Compile Include="UI\HtmlElement.cs" />
     <Compile Include="UI\HtmlHelperExtension.cs" />
+    <Compile Include="UI\IHtmlNode.cs" />
+    <Compile Include="UI\LiteralNode.cs" />
     <Compile Include="UI\ViewComponentBase.cs" />
     <Compile Include="UI\ViewComponentBuilderBase.cs" />
     <Compile Include="UI\ViewComponentFactory.cs" />
+    <Compile Include="Utility\Extensions\ObjectExtensions.cs" />
     <Compile Include="Utility\Extensions\TypeExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
