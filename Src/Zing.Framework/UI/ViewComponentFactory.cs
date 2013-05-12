@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Zing.UI.Fluent;
+using Zing.UI.Html;
 
 namespace Zing.UI
 {
@@ -22,7 +23,7 @@ namespace Zing.UI
 
         public virtual GridBuilder<T> Grid<T>() where T : class
         {
-            return GridBuilder<T>.Create(new Grid<T>());
+            return GridBuilder<T>.Create(new Grid<T>(DependencyResolver.Current.GetService<IGridHtmlBuilder>()));
         }
     }
 

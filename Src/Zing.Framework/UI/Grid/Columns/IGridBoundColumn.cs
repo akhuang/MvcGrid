@@ -9,5 +9,7 @@ namespace Zing.UI
     {
         string Member { get; set; }
         Type MemberType { get; set; }
+        string Title { get; set; }
+
     }
 }

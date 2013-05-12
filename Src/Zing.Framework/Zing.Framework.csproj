@@ -94,6 +94,11 @@
     <Compile Include="Logging\OrchardLog4netFactory.cs" />
     <Compile Include="Logging\OrchardLog4netLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\TextResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TextResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\ComponentBuilderBase.cs" />
     <Compile Include="UI\DynamicTypeBuilder.cs" />
     <Compile Include="UI\Grid\Columns\GridBoundColumn.cs" />
@@ -111,16 +116,26 @@
     <Compile Include="UI\HtmlHelperExtension.cs" />
     <Compile Include="UI\IHtmlNode.cs" />
     <Compile Include="UI\LiteralNode.cs" />
+    <Compile Include="UI\UIModule.cs" />
+    <Compile Include="UI\UIPrimitives.cs" />
     <Compile Include="UI\ViewComponentBase.cs" />
     <Compile Include="UI\ViewComponentBuilderBase.cs" />
     <Compile Include="UI\ViewComponentFactory.cs" />
+    <Compile Include="Utility\Extensions\ExpressionExtensions.cs" />
     <Compile Include="Utility\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Utility\Extensions\StringExtensions.cs" />
     <Compile Include="Utility\Extensions\TypeExtensions.cs" />
+    <Compile Include="Utility\Guard.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\TextResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -8,6 +8,8 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Autofac.Integration.Mvc;
 using Zing.Logging;
+using Zing.UI;
+using System.Web.Optimization;
 
 namespace MvcGrid
 {
@@ -22,11 +24,12 @@ namespace MvcGrid
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterModule(new LoggingModule());
-            //builder.RegisterModule(new UIModule());
+            builder.RegisterModule(new UIModule());
 
             var container = builder.Build();
 
