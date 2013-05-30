@@ -1,5 +1,6 @@
 ﻿@{
     ViewBag.Title = "Index";
+ 
 }
 
 <h2>Index</h2>
@@ -15,7 +16,12 @@
 )
 
 
-@section sciprts
-{
 
-}
+<script type="text/javascript">
+    //<![CDATA[
+    jQuery(document).ready(function () {
+        jQuery('#Grid').tGrid({ columns: [{ "title": "Order ID", "member": "OrderID", "type": "Number" }, { "title": "Contact Name", "member": "Customer.ContactName", "type": "String" }, { "title": "Ship Address", "member": "ShipAddress", "type": "String" }, { "title": "Order Date", "member": "OrderDate", "type": "Date", "format": "{0:MM/dd/yyyy}" }], plugins: ["grouping", "filtering"], total: 0, currentPage: 1, pageSizesInDropDown: ["5", "10", "20", "50"], pageOnScroll: false, sortMode: 'single', allowUnsort: true, ajax: { "selectUrl": "/Grid/_AjaxBinding" }, localization: { "addNew": "Add new record", "delete": "Delete", "cancel": "Cancel", "update": "Update", "insert": "Insert", "edit": "Edit", "select": "Select", "page": "Page ", "displayingItems": "Displaying items {0} - {1} of {2}", "pageOf": "of {0}", "filter": "Filter", "filterAnd": "And", "filterClear": "Clear Filter", "filterDateEq": "Is equal to", "filterDateGe": "Is after or equal to", "filterDateGt": "Is after", "filterDateLe": "Is before or equal to", "filterDateLt": "Is before", "filterDateNe": "Is not equal to", "filterNumberEq": "Is equal to", "filterNumberGe": "Is greater than or equal to", "filterNumberGt": "Is greater than", "filterNumberLe": "Is less than or equal to", "filterNumberLt": "Is less than", "filterNumberNe": "Is not equal to", "filterShowRows": "Show rows with value that", "filterStringEndsWith": "Ends with", "filterStringEq": "Is equal to", "filterStringNe": "Is not equal to", "filterStringStartsWith": "Starts with", "filterStringSubstringOf": "Contains", "groupHint": "Drag a column header and drop it here to group by that column", "filterEnumEq": "Is equal to", "filterEnumNe": "Is not equal to", "deleteConfirmation": "Are you sure you want to delete this record?", "filterSelectValue": "-Select value-", "filterBoolIsFalse": "is false", "filterBoolIsTrue": "is true", "noRecords": "No records to display.", "cancelChanges": "Cancel changes", "saveChanges": "Save changes", "refresh": "Refresh", "sortedAsc": "sorted ascending", "sortedDesc": "sorted descending", "unGroup": "ungroup", "filterForeignKeyEq": "Is equal to", "filterForeignKeyNe": "Is not equal to", "filterStringNotSubstringOf": "Does not contain", "filterOr": "Or" }, noRecordsTemplate: 'No records to display.' });
+        jQuery('#code-viewer-tabs').tTabStrip({ onLoad: codeTabLoad, contentUrls: ["", "/Home/CodeFile?file=~%2FViews%2Fgrid%2Fajaxbinding.aspx", "/Home/CodeFile?file=~%2FControllers%2Fgrid%2FajaxbindingController.cs", "/Home/CodeFile?file=~%2FViews%2FShared%2FSite.Master"] });
+    });
+    //]]>
+</script>

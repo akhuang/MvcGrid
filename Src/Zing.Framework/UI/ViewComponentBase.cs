@@ -10,10 +10,16 @@ namespace Zing.UI
 {
     public abstract class ViewComponentBase
     {
-
-        public ViewComponentBase()
+        public ViewComponentBase(IJavaScriptInitializer initializer)
         {
             HtmlAttributes = new RouteValueDictionary();
+            this.Initializer = initializer;
+        }
+
+        public IJavaScriptInitializer Initializer
+        {
+            get;
+            private set;
         }
 
         public string Id { get; set; }

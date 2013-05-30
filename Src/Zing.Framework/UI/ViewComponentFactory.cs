@@ -13,6 +13,7 @@ namespace Zing.UI
         public ViewComponentFactory(HtmlHelper htmlHelper)
         {
             this.HtmlHelper = htmlHelper;
+            this.Initializer = DependencyResolver.Current.GetService<IJavaScriptInitializer>();
         }
 
         public HtmlHelper HtmlHelper
@@ -21,9 +22,15 @@ namespace Zing.UI
             set;
         }
 
+        public IJavaScriptInitializer Initializer
+        {
+            get;
+            private set;
+        }
+
         public virtual GridBuilder<T> Grid<T>() where T : class
         {
-            return GridBuilder<T>.Create(new Grid<T>(DependencyResolver.Current.GetService<IGridHtmlBuilder>()));
+            return GridBuilder<T>.Create(new Grid<T>(Initializer, DependencyResolver.Current.GetService<IGridHtmlBuilder>()));
         }
     }
 

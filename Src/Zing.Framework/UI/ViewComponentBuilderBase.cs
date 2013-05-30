@@ -44,7 +44,7 @@ namespace Zing.UI
 
         public override string ToString()
         {
-            return base.ToString();
+            return ToHtmlString();
         }
 
     }

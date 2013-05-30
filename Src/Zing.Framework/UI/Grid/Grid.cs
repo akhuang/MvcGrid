@@ -9,8 +9,8 @@ namespace Zing.UI
 {
     public class Grid<T> : ViewComponentBase where T : class
     {
-        public Grid(IGridHtmlBuilder gridHtmlBuilder)
-            : base()
+        public Grid(IJavaScriptInitializer initializer, IGridHtmlBuilder gridHtmlBuilder)
+            : base(initializer)
         {
             this.GridHtmlBuilder = gridHtmlBuilder;
             this.Columns = new List<IGridBoundColumn>();
